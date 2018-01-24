@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "695101700521",
+    "firebase_url": "https://navigator-514de.firebaseio.com",
+    "project_id": "navigator-514de",
+    "storage_bucket": "navigator-514de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695101700521:android:f7eb1e498508f4b8",
+        "android_client_info": {
+          "package_name": "com.example.android.navigator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695101700521-76gck27a75dnvi8ofv6ttv4abo6t2r1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVT97O0qe_SG8ZSgqwQ1dwQYGJxrGQBE0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

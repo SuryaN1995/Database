@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Form</string>
+    <string name="name">NAME</string>
+    <string name="student_enrollment_form">STUDENT ENROLLMENT FORM</string>
+    <string name="discipline">Discipline</string>
+    <string name="age">Age</string>
+    <string name="unique_id">UNIQUE ID</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="view_all">VIEW-ALL</string>
+    <string name="add_data">ADD-DATA</string>
+</resources>

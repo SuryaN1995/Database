@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fragments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello" >TechJini is one of the leading application development companies operating out of New Jersey and India. App development has never been as big as it is today. Mobile application development is in huge demand and to fulfill this demand, we have qualified and experienced app developers who build applications as per your requirement. We work on diverse application development projects across iOS, Android and Windows Phone. We have catered unique solutions for rapid application development to clients from across the world. We have specialized application developers who work closely with our customers on building effective apps as per their demand.</string>
+</resources>

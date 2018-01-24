@@ -1,0 +1,80 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.android.navigator.model.SampleModel" />
+
+        <variable
+            name="handler"
+            type="com.example.android.navigator.databinding.UserBindingFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context="com.example.android.navigator.databinding.UserBindingFragment">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/userStatus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@{model.online == true ? @color/colorAccent : @color/colorPrimary}" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/userStatus"
+                android:text="@{model.username}"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_toEndOf="@id/userStatus"
+                android:text="@{model.useremail}"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_toEndOf="@id/userStatus"
+                android:text="@{model.online == true ? @string/online : @string/offline}"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="10dp"
+            android:onClick="@{()->handler.onButtonClick(true)}"
+            android:text="@string/online" />
+
+        <Button
+            android:id="@+id/btnOffline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:layout_toRightOf="@+id/btnOnline"
+            android:layout_marginTop="10dp"
+            android:onClick="@{()->handler.onButtonClick(false)}"
+            android:text="@string/offline" />
+
+    </RelativeLayout>
+</layout>

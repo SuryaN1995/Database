@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:gravity="top"
+        android:text="@string/student_form"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:gravity="center_vertical"
+        android:hint="@string/name"
+        android:inputType="textCapCharacters"
+        android:maxLines="1"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/text_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_name"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="3"
+        android:hint="@string/age"
+        android:textAlignment="center" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_age"
+        android:id="@+id/data_class"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_class"
+        android:id="@+id/text_gen"
+        android:textColor="@color/colorText"
+        android:text="@string/gender"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_grp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingStart="75dp"
+        android:paddingEnd="20dp"
+
+        android:layout_below="@id/text_gen">
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/radio_male"
+           android:layout_weight="1"
+           android:text="@string/male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_female"
+            android:layout_weight="1"
+            android:text="@string/female"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="82dp"
+        android:layout_marginStart="49dp"
+        android:text="@string/submit" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_submit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp"
+        android:text="@string/clear" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_submit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:text="@string/modify"
+        android:onClick="modify_data"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_clear"
+        android:layout_alignTop="@+id/button"
+        android:text="@string/delete"
+        android:onClick="delete_data"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="@string/view"
+        android:onClick="dis"/>
+
+
+</RelativeLayout>

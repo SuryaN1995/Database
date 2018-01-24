@@ -1,0 +1,53 @@
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Network">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="key1"
+            android:title="Airplane mode"
+            android:summary="Click to switch on/off"
+            android:defaultValue="true" />
+
+        <android.support.v7.preference.EditTextPreference
+            android:key="key2"
+            android:title="User Name"
+            android:summary="Enter the User Name"
+            android:dialogMessage="Dialog Message"
+            android:ems="10"
+            android:inputType="text"
+            android:dialogLayout="@layout/pref_dialog" />
+
+        <android.support.v7.preference.CheckBoxPreference
+            android:key="key3"
+            android:title="Notification"
+            android:defaultValue="true"/>
+
+    </android.support.v7.preference.PreferenceCategory>
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="key_about"
+        android:title="About">
+        <PreferenceScreen
+            android:key="button_system_update"
+            android:title="System update"
+            android:persistent="false">
+            <ListPreference
+                android:key="button_status"
+                android:title="Legal info" />
+        </PreferenceScreen>
+            <PreferenceScreen
+                android:key="button_device_info"
+                android:title="Device information"
+                android:persistent="false">
+
+            <android.support.v7.preference.CheckBoxPreference
+                android:key="button_experience_prog"
+                android:title="Notifications"
+                android:defaultValue="true"/>
+        </PreferenceScreen>
+    </PreferenceScreen>
+
+
+</android.support.v7.preference.PreferenceScreen>

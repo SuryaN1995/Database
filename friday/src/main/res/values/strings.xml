@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Jarvis</string>
+    <string name="name">Name</string>
+    <string name="student_form">STUDENT ENROLLMENT FORM</string>
+    <string name="age">Age</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="male">MALE</string>
+    <string name="female">FEMALE</string>
+    <string name="gender">Gender</string>
+    <string name="modify">Modify</string>
+    <string name="delete">Delete</string>
+    <string name="provide_person_name_to_delete">Provide person name to delete</string>
+    <string name="update">Update</string>
+    <string name="new_name">New name</string>
+    <string name="old_name">Old Name</string>
+    <string name="view">View</string>
+</resources>
